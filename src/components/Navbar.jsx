@@ -1,8 +1,12 @@
 import React from "react";
-import { FaBars, FaTime } from "react-icons/fa";
+import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "../assets/logo.png";
 
 function Navbar() {
+  const [nav, setNav] = useState(false);
+  const handleClick = () => setNav(!nav);
+
   return (
     <div
       className="fixed w-full h-[80px] flex justify-between 
@@ -12,7 +16,7 @@ function Navbar() {
         <img src={Logo} alt="Logo Image" style={{ width: "60px" }} />
       </div>
 
-      {/* menu */}
+      {/* Main menu */}
       <ul className="hidden md:flex">
         <li>Home</li>
         <li>About</li>
@@ -22,14 +26,17 @@ function Navbar() {
       </ul>
 
       {/* Hamburger */}
-      <div className="md:hidden z-10">
-        <FaBars />
+      <div onClick={handleClick} className="md:hidden z-10">
+        {!nav ? <FaBars /> : <FaTimes />}
       </div>
 
       {/* Mobile menu */}
       <ul
-        className="hidden absolute top-0 left-0 w-full h-screen 
-        bg-[#0a192f] flex flex-col justify-center items-center"
+        className={
+          !nav
+            ? "hidden"
+            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
+        }
       >
         <li className="py-6 text-4xl">Home</li>
         <li className="py-6 text-4xl">About</li>
