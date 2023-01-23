@@ -6,7 +6,11 @@ function Contact() {
       name="contact"
       className="w-full h-screen bg-[#0a192f] flex justify-center items-center p-4"
     >
-      <form action="" className="flex flex-col max-w-[600px] w-full">
+      <form
+        action="https://getform.io/f/de311da6-1e13-4759-baa8-95744e3eacf1"
+        method="POST"
+        className="flex flex-col max-w-[600px] w-full"
+      >
         <div>
           <p className="text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300">
             Contact
@@ -35,6 +39,13 @@ function Contact() {
           rows="10"
           placeholder="Message"
         ></textarea>
+
+        <button
+          className="text-white border-2 hover:bg-pink-600 duration-300
+        hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center"
+        >
+          Let's Collaborate
+        </button>
       </form>
     </div>
   );
