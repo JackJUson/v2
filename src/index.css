@@ -10,7 +10,7 @@
   }
 
   li {
-    @apply px-4;
+    @apply mx-4;
     @apply cursor-pointer;
   }
 }
