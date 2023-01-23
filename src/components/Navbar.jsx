@@ -5,6 +5,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Logo from "../assets/logo.png";
 import { Link } from "react-scroll";
+import NavLink from "./NavLink";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -26,36 +27,19 @@ function Navbar() {
         </Link>
         {/* Main menu */}
         <ul className="hidden md:flex">
-          <li className="mx-4">
-            <Link to="home" smooth={true} duration={500}>
-              Home
-            </Link>
-          </li>
-          <li className="mx-4">
-            <Link to="about" smooth={true} duration={500}>
-              About
-            </Link>
-          </li>
-          <li className="mx-4">
-            <Link to="skills" smooth={true} duration={500}>
-              Skills
-            </Link>
-          </li>
-          <li className="mx-4">
-            <Link to="work" smooth={true} duration={500}>
-              Work
-            </Link>
-          </li>
-          <li className="mx-4">
-            <Link to="contact" smooth={true} duration={500}>
-              Contact
-            </Link>
-          </li>
+          <NavLink link={"home"} linkName={"Home"} />
+          <NavLink link={"about"} linkName={"About"} />
+          <NavLink link={"skills"} linkName={"Skills"} />
+          <NavLink link={"work"} linkName={"Work"} />
+          <NavLink link={"contact"} linkName={"Contact"} />
         </ul>
       </div>
 
       {/* Hamburger */}
-      <div onClick={handleClick} className="md:hidden z-10">
+      <div
+        onClick={handleClick}
+        className="md:hidden z-10 cursor-pointer text-2xl"
+      >
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
 
