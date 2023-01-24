@@ -27,11 +27,11 @@ function Navbar() {
         </Link>
         {/* Main menu */}
         <ul className="hidden md:flex">
-          <NavLink link={"home"} linkName={"Home"} />
-          <NavLink link={"about"} linkName={"About"} />
-          <NavLink link={"skills"} linkName={"Skills"} />
-          <NavLink link={"work"} linkName={"Work"} />
-          <NavLink link={"contact"} linkName={"Contact"} />
+          <NavLink screen={true} link={"home"} name={"Home"} />
+          <NavLink screen={true} link={"about"} name={"About"} />
+          <NavLink screen={true} link={"skills"} name={"Skills"} />
+          <NavLink screen={true} link={"work"} name={"Work"} />
+          <NavLink screen={true} link={"contact"} name={"Contact"} />
         </ul>
       </div>
 
@@ -51,35 +51,15 @@ function Navbar() {
             : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
         }
       >
-        <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="home" smooth={true} duration={500}>
-            Home
-          </Link>
-        </li>
-        <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="about" smooth={true} duration={500}>
-            About
-          </Link>
-        </li>
-        <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
-            Skills
-          </Link>
-        </li>
-        <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="work" smooth={true} duration={500}>
-            Work
-          </Link>
-        </li>
-        <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
-            Contact
-          </Link>
-        </li>
+        <NavLink screen={false} link={"home"} name={"Home"} handleClick={handleClick} />
+        <NavLink screen={false} link={"about"} name={"About"} handleClick={handleClick} />
+        <NavLink screen={false} link={"skills"} name={"Skills"} handleClick={handleClick} />
+        <NavLink screen={false} link={"work"} name={"Work"} handleClick={handleClick} />
+        <NavLink screen={false} link={"contact"} name={"Contact"} handleClick={handleClick} />
       </ul>
 
       {/* Social icons */}
-      <div className="hidden lg:flex fixed flex-col top-[32%] left-0">
+      <div className="hidden lg:flex fixed flex-col top-[40%] left-0">
         <ul>
           <li
             className="w-[150px] h-[60px] flex justify-between items-center ml-[-90px]
