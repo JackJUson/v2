@@ -16,7 +16,7 @@ function Navbar() {
   return (
     <div
       className="fixed w-full h-[80px] flex justify-center 
-      items-center px-4 bg-[#0a192f] text-gray-300"
+      items-center px-4 bg-[#0a192f] text-gray-300 z-50"
     >
       <div className="flex w-full justify-between items-center max-w-7xl">
         <Link to="home" smooth={true} duration={500}>
