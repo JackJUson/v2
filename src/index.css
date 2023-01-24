@@ -6,11 +6,11 @@
 
 @layer base {
   body {
-    @apply font-[Raleway];
+    @apply font-[Raleway] scrollbar-thumb-[#233554] 
+    scrollbar-track-transparent scrollbar-thin scrollbar-thumb-rounded-full;
   }
 
   li {
-    @apply mx-4;
     @apply cursor-pointer;
   }
 }
