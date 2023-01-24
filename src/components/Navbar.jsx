@@ -28,12 +28,21 @@ function Navbar() {
           />
         </Link>
         {/* Main menu */}
-        <ul className="hidden md:flex">
+        <ul className="hidden md:flex items-center">
           <NavLink screen={true} link={"home"} name={"Home"} />
           <NavLink screen={true} link={"about"} name={"About"} />
-          <NavLink screen={true} link={"skills"} name={"Skills"} />
           <NavLink screen={true} link={"work"} name={"Work"} />
           <NavLink screen={true} link={"contact"} name={"Contact"} />
+          <li>
+            <a
+              className="border-2 border-gray-300 px-2 py-1 mx-3 flex items-center rounded
+          hover:bg-[#64ffda] hover:bg-opacity-40 hover:text-white hover:border-[#64ffda] duration-300"
+              href={Resume}
+              target="_blank"
+            >
+              Resume
+            </a>
+          </li>
         </ul>
       </div>
 
@@ -55,9 +64,11 @@ function Navbar() {
       >
         <NavLink link={"home"} name={"Home"} handleClick={handleClick} />
         <NavLink link={"about"} name={"About"} handleClick={handleClick} />
-        <NavLink link={"skills"} name={"Skills"} handleClick={handleClick} />
         <NavLink link={"work"} name={"Work"} handleClick={handleClick} />
         <NavLink link={"contact"} name={"Contact"} handleClick={handleClick} />
+        <li className="my-6 text-4xl hover:text-[#64ffda] duration-300">
+          <a href={Resume} target="_blank">Resume</a>
+        </li>
       </ul>
 
       {/* Social icons */}
