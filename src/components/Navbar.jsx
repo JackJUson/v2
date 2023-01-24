@@ -3,6 +3,7 @@ import { useState } from "react";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import Resume from "../assets/cv.pdf";
 import Logo from "../assets/logo.png";
 import { Link } from "react-scroll";
 import NavLink from "./NavLink";
@@ -82,7 +83,7 @@ function Navbar() {
           />
           <SocialLink
             name={"Resume"}
-            link={"../assets/cv.pdf"}
+            link={Resume}
             background={"bg-[#565f69]"}
             icon={<BsFillPersonLinesFill size={30} />}
           />
