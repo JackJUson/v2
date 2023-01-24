@@ -6,6 +6,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import Logo from "../assets/logo.png";
 import { Link } from "react-scroll";
 import NavLink from "./NavLink";
+import SocialLink from "./SocialLink";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -51,60 +52,40 @@ function Navbar() {
             : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
         }
       >
-        <NavLink screen={false} link={"home"} name={"Home"} handleClick={handleClick} />
-        <NavLink screen={false} link={"about"} name={"About"} handleClick={handleClick} />
-        <NavLink screen={false} link={"skills"} name={"Skills"} handleClick={handleClick} />
-        <NavLink screen={false} link={"work"} name={"Work"} handleClick={handleClick} />
-        <NavLink screen={false} link={"contact"} name={"Contact"} handleClick={handleClick} />
+        <NavLink link={"home"} name={"Home"} handleClick={handleClick} />
+        <NavLink link={"about"} name={"About"} handleClick={handleClick} />
+        <NavLink link={"skills"} name={"Skills"} handleClick={handleClick} />
+        <NavLink link={"work"} name={"Work"} handleClick={handleClick} />
+        <NavLink link={"contact"} name={"Contact"} handleClick={handleClick} />
       </ul>
 
       {/* Social icons */}
       <div className="hidden lg:flex fixed flex-col top-[40%] left-0">
         <ul>
-          <li
-            className="w-[150px] h-[60px] flex justify-between items-center ml-[-90px]
-              hover:ml-[-5px] duration-300 bg-[#0A66C2] px-4"
-          >
-            <a
-              className="flex justify-between items-center w-full text-gray-300"
-              href="/"
-            >
-              Linkedin <FaLinkedin size={30} />
-            </a>
-          </li>
-          <li
-            className="w-[150px] h-[60px] flex justify-between items-center ml-[-90px]
-              hover:ml-[-5px] duration-300 bg-[#333333] px-4"
-          >
-            <a
-              className="flex justify-between items-center w-full text-gray-300"
-              href="/"
-            >
-              Github <FaGithub size={30} />
-            </a>
-          </li>
-          <li
-            className="w-[150px] h-[60px] flex justify-between items-center ml-[-90px]
-              hover:ml-[-5px] duration-300 bg-[#6fc2b0] px-4"
-          >
-            <a
-              className="flex justify-between items-center w-full text-gray-300"
-              href="/"
-            >
-              Email <HiOutlineMail size={30} />
-            </a>
-          </li>
-          <li
-            className="w-[150px] h-[60px] flex justify-between items-center ml-[-90px]
-              hover:ml-[-5px] duration-300 bg-[#565f69] px-4"
-          >
-            <a
-              className="flex justify-between items-center w-full text-gray-300"
-              href="/"
-            >
-              Resume <BsFillPersonLinesFill size={30} />
-            </a>
-          </li>
+          <SocialLink
+            name={"Linkedin"}
+            link={"https://www.linkedin.com/in/jackson-jung-07837616a/"}
+            background={"bg-[#0A66C2]"}
+            icon={<FaLinkedin size={30} />}
+          />
+          <SocialLink
+            name={"Github"}
+            link={"https://github.com/JackJUson"}
+            background={"bg-[#333333]"}
+            icon={<FaGithub size={30} />}
+          />
+          <SocialLink
+            name={"Email"}
+            link={"mailto:jackson.w.jung@gmail.com"}
+            background={"bg-[#6fc2b0]"}
+            icon={<HiOutlineMail size={30} />}
+          />
+          <SocialLink
+            name={"Resume"}
+            link={"../assets/cv.pdf"}
+            background={"bg-[#565f69]"}
+            icon={<BsFillPersonLinesFill size={30} />}
+          />
         </ul>
       </div>
     </div>
