@@ -19,7 +19,7 @@ function About() {
           applications that could help others and myself.
           <br />
           <br />
-          My interest in <span className="text-[#64ffda]">
+          My interest in <span className="text-[#64ffda] text-underline">
             web development
           </span>{" "}
           started with customising my own website that had a few productitivity
@@ -28,9 +28,9 @@ function About() {
           flexbox!
           <br />
           <br />
-          Today, I am enrolled in UNSW as a penultimate computer science student
+          As of today, I am studying computer science at UNSW
           and a graduate of the notorious{" "}
-          <span className="text-[#64ffda]">
+          <span className="text-[#64ffda] text-underline">
             frontend simplified internship!
           </span>
           <br />
@@ -38,7 +38,7 @@ function About() {
         <div className="relative group hidden md:block group">
           <div
             className="bg-[#64ffda] bg-opacity-30 absolute w-[300px]
-            h-[300px] rounded-md group-hover:collapse z-30"
+            h-[300px] rounded-md group-hover:bg-opacity-0 duration-200 z-30"
           ></div>
           <img
             src={Profile}
