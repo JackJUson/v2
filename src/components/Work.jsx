@@ -15,7 +15,10 @@ function Work() {
         {projects.map((project, index) =>
           index % 2 === 0 ? (
             <div className="flex max-h-[50%] mb-[4rem]" key={index}>
-              <div className="rounded-sm overflow-hidden lg:block flex items-center shadow-2xl">
+              <div
+                className="rounded-sm overflow-hidden lg:block flex items-center 
+                   shadow-2xl hover:scale-105 duration-300"
+              >
                 <a
                   href={project.github}
                   target="_blank"
@@ -46,7 +49,9 @@ function Work() {
                 </p>
                 <ul className="flex justify-between text-sm w-[90%] z-40 font-thin">
                   {project.techs.map((tech) => (
-                    <li>{tech}</li>
+                    <li className="hover:scale-110 cursor-default duration-200">
+                      {tech}
+                    </li>
                   ))}
                 </ul>
                 <div className="flex">
@@ -87,7 +92,9 @@ function Work() {
                 </p>
                 <ul className="flex justify-between text-sm w-[90%] z-40 font-thin">
                   {project.techs.map((tech) => (
-                    <li>{tech}</li>
+                    <li className="hover:scale-110 cursor-default duration-200">
+                      {tech}
+                    </li>
                   ))}
                 </ul>
                 <div className="flex">
@@ -107,7 +114,10 @@ function Work() {
                   </a>
                 </div>
               </div>
-              <div className="rounded-sm overflow-hidden md:block flex items-center shadow-2xl">
+              <div
+                className="rounded-sm overflow-hidden md:block flex items-center 
+                   shadow-2xl hover:scale-105 duration-300"
+              >
                 <a
                   href={project.github}
                   target="_blank"
