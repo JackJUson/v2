@@ -47,19 +47,20 @@ function Work() {
           </div>
         </div>  */}
 
-        <div className="flex">
-          <div className="rounded-md overflow-hidden">
-            <img src={Project} alt="Project Image" />
+        <div className="flex max-h-[50%]">
+          <div className="rounded-sm overflow-hidden md:block flex items-center w-[240%]">
+            <img src={Project} alt="Project Image" className="w-full"/>
           </div>
           <div className="text-right flex flex-col justify-evenly items-end">
             <h3>Featured Project</h3>
             <h2>Project Title</h2>
-            <p>
+            <p className="bg-[#112240] w-[110%] py-6 pr-6 pl-6 z-40 rounded-sm">
               Project Description Lorem, ipsum dolor sit amet consectetur
-              adipisicing elit. Blanditiis culpa debitis similique. Facilis,
-              vitae sapiente? Lorem ipsum dolor sit amet, consectetur adipis
+              adipisicing elit. culpa debitis similique. Facilis,
+              vitae sapiente? Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Pariatur quas rerum minima commodi
             </p>
-            <ul className="flex justify-between w-[70%]">
+            <ul className="flex justify-between">
               <li>React</li>
               <li>JavaScript</li>
               <li>TailwindCss</li>
@@ -67,7 +68,9 @@ function Work() {
               <li>NextJs</li>
             </ul>
             <div>
-              <a href="" className="mr-6">Github Icon</a>
+              <a href="" className="mr-6">
+                Github Icon
+              </a>
               <a href="">Link Icon</a>
             </div>
           </div>
