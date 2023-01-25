@@ -35,15 +35,15 @@ function About() {
           </span>
           <br />
         </p>
-        <div className="relative group hidden md:block">
+        <div className="relative group hidden md:block group">
           <div
-            className="bg-[#64ffda] bg-opacity-50 absolute w-[300px]
+            className="bg-[#64ffda] bg-opacity-30 absolute w-[300px]
             h-[300px] rounded-md group-hover:collapse z-30"
           ></div>
           <img
             src={Profile}
             alt="Profile Image"
-            className="relative w-[300px] z-20 rounded-md"
+            className="relative w-[300px] z-20 rounded-md grayscale group-hover:grayscale-0"
           />
           <div
             className="absolute border-2 rounded-md border-[#64ffda] w-[300px]
