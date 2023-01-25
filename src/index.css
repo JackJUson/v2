@@ -29,3 +29,8 @@
         hsla(242, 74%, 61%, 0.8)   
     )!important;
 }
+
+.blur-backdrop-filter {
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
