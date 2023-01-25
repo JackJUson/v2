@@ -1,22 +1,32 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
-import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+import { FaBars, FaTimes } from "react-icons/fa";
 import Resume from "../assets/cv.pdf";
 import Logo from "../assets/logo.png";
 import { Link } from "react-scroll";
 import NavLink from "./NavLink";
-import SocialLink from "./SocialLink";
+import { useDetectScroll } from "@smakss/react-scroll-direction";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
+  const [scrollDir] = useDetectScroll({});
+
+  const [scrollY, setScrollY] = useState(window.scrollY);
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <div
-      className="fixed w-full h-[80px] flex justify-center 
-      items-center px-4 bg-[#0a192f] text-gray-300 z-50"
+      className={`fixed w-full h-[70px] flex justify-center items-center duration-300
+      bg-[#0a192f] text-gray-300 px-8 z-50
+      ${scrollDir === "down" ? "translate-y-[-100%]" : ""}
+      ${scrollY === 0 ? "mt-3" : ""}`}
     >
       <div className="flex w-full justify-between items-center max-w-7xl">
         <Link to="home" smooth={true} duration={500}>
@@ -67,39 +77,11 @@ function Navbar() {
         <NavLink link={"work"} name={"Work"} handleClick={handleClick} />
         <NavLink link={"contact"} name={"Contact"} handleClick={handleClick} />
         <li className="my-6 text-4xl hover:text-[#64ffda] duration-300">
-          <a href={Resume} target="_blank">Resume</a>
+          <a href={Resume} target="_blank">
+            Resume
+          </a>
         </li>
       </ul>
-
-      {/* Social icons */}
-      <div className="hidden lg:flex fixed flex-col top-[40%] left-0">
-        <ul>
-          <SocialLink
-            name={"Linkedin"}
-            link={"https://www.linkedin.com/in/jackson-jung-07837616a/"}
-            background={"bg-[#0A66C2]"}
-            icon={<FaLinkedin size={30} />}
-          />
-          <SocialLink
-            name={"Github"}
-            link={"https://github.com/JackJUson"}
-            background={"bg-[#333333]"}
-            icon={<FaGithub size={30} />}
-          />
-          <SocialLink
-            name={"Email"}
-            link={"mailto:jackson.w.jung@gmail.com"}
-            background={"bg-[#6fc2b0]"}
-            icon={<HiOutlineMail size={30} />}
-          />
-          <SocialLink
-            name={"Resume"}
-            link={Resume}
-            background={"bg-[#565f69]"}
-            icon={<BsFillPersonLinesFill size={30} />}
-          />
-        </ul>
-      </div>
     </div>
   );
 }
