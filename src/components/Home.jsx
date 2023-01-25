@@ -9,7 +9,7 @@ function Home() {
         <p className="text-[#64ffda] tracking-wider mb-4">
           Hi, my name is
         </p>
-        <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6] mb-3">
+        <h1 className="text-5xl sm:text-7xl font-bold text-[#ccd6f6] mb-3">
           Jackson Jung.
         </h1>
         <h2 className="text-4xl sm:text-7xl font-bold text-[#8892b0] mb-4">
