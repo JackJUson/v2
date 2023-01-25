@@ -21,14 +21,10 @@ function Work() {
                   target="_blank"
                   className="relative group"
                 >
-                  <div
-                    className="bg-[#0f8a6d] bg-opacity-30 absolute rounded-md 
-                          group-hover:bg-opacity-0 z-30 w-full h-full duration-200"
-                  ></div>
                   <img
                     src={project.image}
                     alt="Project Image"
-                    className="w-full relative grayscale-[100%] group-hover:grayscale-0"
+                    className="w-full"
                   />
                 </a>
               </div>
@@ -117,14 +113,10 @@ function Work() {
                   target="_blank"
                   className="relative group"
                 >
-                  <div
-                    className="bg-[#64ffda] bg-opacity-30 absolute rounded-sm 
-                          group-hover:bg-opacity-0 z-30 w-full h-full duration-200"
-                  ></div>
                   <img
                     src={project.image}
                     alt="Project Image"
-                    className="w-full relative grayscale-[100%] group-hover:grayscale-0"
+                    className="w-full"
                   />
                 </a>
               </div>

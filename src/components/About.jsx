@@ -36,14 +36,10 @@ function About() {
           <br />
         </p>
         <div className="relative group hidden md:block group">
-          <div
-            className="bg-[#64ffda] bg-opacity-30 absolute w-[300px]
-            h-[300px] rounded-md group-hover:bg-opacity-0 duration-200 z-30"
-          ></div>
           <img
             src={Profile}
             alt="Profile Image"
-            className="relative w-[300px] z-20 rounded-md grayscale group-hover:grayscale-0"
+            className="relative w-[300px] z-20 rounded-md"
           />
           <div
             className="absolute border-2 rounded-md border-[#64ffda] w-[300px]
