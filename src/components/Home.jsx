@@ -19,8 +19,8 @@ function Home() {
           I have a strong passion for software engineering with experience
           building responsive multiplatform web applications. Currently, I'm
           focused on making interactive websites with{" "}
-          <span className="text-[#64ffda]">React</span> and{" "}
-          <span className="text-[#64ffda]">NextJs</span>.
+          <span className="text-[#64ffda] text-underline">React</span> and{" "}
+          <span className="text-[#64ffda] text-underline">NextJs</span>.
         </p>
         <div>
           <Link to="about" smooth={true} duration={500}>
