@@ -24,7 +24,7 @@ function Navbar() {
   return (
     <div
       className={`fixed w-full h-[70px] flex justify-center items-center duration-300
-      bg-[#0a192f] text-gray-300 px-8 z-50
+      bg-[#0a192f] text-gray-300 px-8 z-50 bg-opacity-80 bg-clip-padding blur-backdrop-filter
       ${scrollDir === "down" ? "translate-y-[-100%]" : ""}
       ${scrollY === 0 ? "mt-3" : ""}`}
     >
