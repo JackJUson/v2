@@ -7,6 +7,7 @@ import Work from "./components/Work";
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import Social from "./components/Social";
+import Footer from "./components/Footer";
 
 function App() {
   AOS.init();
@@ -19,6 +20,7 @@ function App() {
       <Skills />
       <Work />
       <Contact />
+      <Footer />
     </div>
   );
 }
