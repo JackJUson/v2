@@ -30,3 +30,19 @@
   background-size: 100% 1px;
   background-position: 0 100%;
 }
+
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .background {
+    background-color: #112240;
+    border-radius: 0.375rem;
+    padding: 8px 32px 8px 32px;
+  }
+  .wrap {
+    flex-wrap: wrap;
+  }
+  .margin {
+    margin-right: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+}
