@@ -14,17 +14,17 @@ function Work() {
 
         {projects.map((project, index) =>
           index % 2 === 0 ? (
-            <div className="hidden md:flex max-h-[50%] mb-[4rem]" key={index}>
-              <div className="flex items-center hover:scale-105 duration-300">
+            <div className="flex max-h-[50%] mb-[4rem] background" key={index}>
+              <div className="hidden md:flex items-center hover:scale-105 duration-300">
                 <a href={project.github} target="_blank">
                   <img
                     src={project.image}
                     alt="Project Image"
-                    className="w-full shadow-2xl rounded-sm"
+                    className="w-full shadow-2xl rounded-sm object-fill"
                   />
                 </a>
               </div>
-              <div className="text-right items-end flex flex-col justify-evenly min-h-[350px]">
+              <div className="text-left md:text-right items-start md:items-end flex flex-col justify-evenly min-h-[350px] sm:z-40">
                 <div>
                   <h3 className="text-[#64ffda] text-sm tracking-wide mb-2">
                     Featured Project
@@ -37,10 +37,10 @@ function Work() {
                     {project.title}
                   </a>
                 </div>
-                <p className="bg-[#112240] w-[130%] min-w-[200px] p-6 pr-9 z-40 rounded-sm shadow-xl text-[#a8b2d1]">
+                <p className="md:bg-[#112240] md:w-[130%] min-w-[200px] md:p-6 md:pr-9 z-40 rounded-sm shadow-xl text-[#a8b2d1]">
                   {project.description}
                 </p>
-                <ul className="flex justify-between text-sm w-[130%] min-w-[200px] lg:w-[90%] z-40 font-thin">
+                <ul className="flex justify-between text-sm w-[50vw] md:w-[130%] md:min-w-[200px] lg:w-[90%] z-40 font-thin">
                   {project.techs.map((tech, techIndex) => (
                     <li className="cursor-default" key={techIndex}>
                       {tech}
@@ -66,7 +66,7 @@ function Work() {
               </div>
             </div>
           ) : (
-            <div className="hidden md:flex max-h-[50%] mb-[4rem]" key={index}>
+            <div className="flex max-h-[50%] mb-[4rem] background" key={index}>
               <div className="text-left items-start flex flex-col justify-evenly min-h-[350px]">
                 <div>
                   <h3 className="text-[#64ffda] text-sm tracking-wide mb-2">
@@ -80,12 +80,12 @@ function Work() {
                     {project.title}
                   </a>
                 </div>
-                <p className="bg-[#112240] w-[130%] min-w-[200px] p-6 pl-7 z-40 rounded-sm shadow-xl text-[#a8b2d1]">
+                <p className="md:bg-[#112240] md:w-[130%] min-w-[200px] md:p-6 md:pl-7 z-40 rounded-sm shadow-xl text-[#a8b2d1]">
                   {project.description}
                 </p>
-                <ul className="flex justify-between text-sm w-[150%] min-w-[200px] lg:w-[120%] z-40 font-thin">
+                <ul className="flex wrap justify-between text-sm w-[50vw] md:w-[150%] md:min-w-[200px] lg:w-[120%] z-40 font-thin">
                   {project.techs.map((tech, techIndex) => (
-                    <li className="cursor-default" key={techIndex}>
+                    <li className="cursor-default margin" key={techIndex}>
                       {tech}
                     </li>
                   ))}
@@ -107,7 +107,7 @@ function Work() {
                   </a>
                 </div>
               </div>
-              <div className="flex items-center hover:scale-105 duration-300 max-w-[500px]">
+              <div className="hidden md:flex items-center hover:scale-105 duration-300 max-w-[500px]">
                 <a href={project.github} target="_blank">
                   <img
                     src={project.image}
