@@ -4,8 +4,8 @@ import { projects } from "../data/projects";
 
 function Work() {
   return (
-    <div name="work" className="w-full text-[#ccd6f6] bg-[#0a192f] pt-11">
-      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
+    <div name="work" className="w-full text-[#ccd6f6] bg-[#0a192f]">
+      <div className="max-w-[80%] w-[1000px] mx-auto p-11 flex flex-col justify-center">
         <div className="my-11">
           <h1 className="text-4xl font-bold inline border-b-4 border-[#64ffda]">
             Work
@@ -14,24 +14,17 @@ function Work() {
 
         {projects.map((project, index) =>
           index % 2 === 0 ? (
-            <div className="flex max-h-[50%] mb-[4rem]" key={index}>
-              <div
-                className="rounded-sm overflow-hidden lg:block flex items-center 
-                   shadow-2xl hover:scale-105 duration-300"
-              >
-                <a
-                  href={project.github}
-                  target="_blank"
-                  className="relative group"
-                >
+            <div className="hidden md:flex max-h-[50%] mb-[4rem]" key={index}>
+              <div className="flex items-center hover:scale-105 duration-300">
+                <a href={project.github} target="_blank">
                   <img
                     src={project.image}
                     alt="Project Image"
-                    className="w-full"
+                    className="w-full shadow-2xl rounded-sm"
                   />
                 </a>
               </div>
-              <div className="text-right items-end flex flex-col justify-evenly min-w-[300px]">
+              <div className="text-right items-end flex flex-col justify-evenly min-h-[350px]">
                 <div>
                   <h3 className="text-[#64ffda] text-sm tracking-wide mb-2">
                     Featured Project
@@ -44,12 +37,12 @@ function Work() {
                     {project.title}
                   </a>
                 </div>
-                <p className="bg-[#112240] w-[110%] p-6 pr-9 z-40 rounded-sm shadow-xl min-w-[400px] text-[#a8b2d1]">
+                <p className="bg-[#112240] w-[130%] min-w-[200px] p-6 pr-9 z-40 rounded-sm shadow-xl text-[#a8b2d1]">
                   {project.description}
                 </p>
-                <ul className="flex justify-between text-sm w-[90%] z-40 font-thin">
-                  {project.techs.map((tech) => (
-                    <li className="hover:scale-110 cursor-default duration-200">
+                <ul className="flex justify-between text-sm w-[130%] min-w-[200px] lg:w-[90%] z-40 font-thin">
+                  {project.techs.map((tech, techIndex) => (
+                    <li className="cursor-default" key={techIndex}>
                       {tech}
                     </li>
                   ))}
@@ -73,8 +66,8 @@ function Work() {
               </div>
             </div>
           ) : (
-            <div className="flex max-h-[50%] mb-[4rem]" key={index}>
-              <div className="text-left items-start flex flex-col justify-evenly min-w-[400px]">
+            <div className="hidden md:flex max-h-[50%] mb-[4rem]" key={index}>
+              <div className="text-left items-start flex flex-col justify-evenly min-h-[350px]">
                 <div>
                   <h3 className="text-[#64ffda] text-sm tracking-wide mb-2">
                     Featured Project
@@ -87,12 +80,12 @@ function Work() {
                     {project.title}
                   </a>
                 </div>
-                <p className="bg-[#112240] w-[110%] p-6 pl-9 z-40 rounded-sm shadow-xl text-[#a8b2d1]">
+                <p className="bg-[#112240] w-[130%] min-w-[200px] p-6 pl-7 z-40 rounded-sm shadow-xl text-[#a8b2d1]">
                   {project.description}
                 </p>
-                <ul className="flex justify-between text-sm w-[90%] z-40 font-thin">
-                  {project.techs.map((tech) => (
-                    <li className="hover:scale-110 cursor-default duration-200">
+                <ul className="flex justify-between text-sm w-[150%] min-w-[200px] lg:w-[120%] z-40 font-thin">
+                  {project.techs.map((tech, techIndex) => (
+                    <li className="cursor-default" key={techIndex}>
                       {tech}
                     </li>
                   ))}
@@ -114,19 +107,12 @@ function Work() {
                   </a>
                 </div>
               </div>
-              <div
-                className="rounded-sm overflow-hidden md:block flex items-center 
-                   shadow-2xl hover:scale-105 duration-300"
-              >
-                <a
-                  href={project.github}
-                  target="_blank"
-                  className="relative group"
-                >
+              <div className="flex items-center hover:scale-105 duration-300 max-w-[500px]">
+                <a href={project.github} target="_blank">
                   <img
                     src={project.image}
                     alt="Project Image"
-                    className="w-full"
+                    className="w-full shadow-2xl rounded-sm"
                   />
                 </a>
               </div>
