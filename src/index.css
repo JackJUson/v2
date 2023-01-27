@@ -2,28 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 
 @layer base {
   body {
     @apply font-[Raleway] scrollbar-thumb-[#233554] 
     scrollbar-track-transparent scrollbar-thin scrollbar-thumb-rounded-full;
   }
-}
-
-.content-div {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 250px;
-}
-
-.content-div:hover {
-  background-image: linear-gradient(
-        to right,
-        rgba(112, 157, 255, 0.8),
-        hsla(242, 74%, 61%, 0.8)   
-    )!important;
 }
 
 .blur-backdrop-filter {
@@ -33,15 +18,15 @@
 
 .text-underline {
   border-bottom-width: 0;
-  background-image: linear-gradient(transparent, transparent), linear-gradient(#64ffda, #64ffda);
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(#64ffda, #64ffda);
   background-size: 0 1px;
   background-position: 0 100%;
   background-repeat: no-repeat;
-  transition: background-size .2s ease-in-out;
+  transition: background-size 0.2s ease-in-out;
 }
-
 
 .text-underline:hover {
   background-size: 100% 1px;
-  background-position: 0 100%
+  background-position: 0 100%;
 }
