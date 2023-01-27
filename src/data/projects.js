@@ -18,7 +18,7 @@ export const projects = [
     title: "Twitter Clone",
     description:
       "Twitter is a social media application where users can post and share their thoughts, feelings or just talk about something they are passionate about.",
-    techs: ["React", "Recoil", "NodeJs", "Firebase", "Next Auth"],
+    techs: ["React", "Recoil", "NodeJs", "Firebase", "Next Authentication"],
     github: "https://github.com/JackJUson/twitter-clone",
     live: "https://twitter-clone-jackjuson.vercel.app/",
     image: Twitter,
@@ -28,7 +28,7 @@ export const projects = [
     title: "Search Engine",
     description:
       "A program that searches for and identifies information in a database that correspond to keywords or characters specified by the user, used especially for finding particular sites on the web",
-    techs: ["HTML", "CSS", "JavaScript", "React", "Vercel"],
+    techs: ["HTML", "CSS", "React", "Firebase", "Vercel"],
     github: "https://github.com/JackJUson/search-engine",
     live: "https://search-engine-six-rust.vercel.app/",
     image: Google,
