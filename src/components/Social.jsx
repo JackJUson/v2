@@ -7,8 +7,8 @@ import Resume from "../assets/cv.pdf";
 
 function Social() {
   return (
-    <div className="hidden lg:flex text-[#a8b2d1] text-xs">
-      <div className="fixed bottom-0 left-[55px] flex-col h-[340px]">
+    <div className="hidden md:flex text-[#a8b2d1] text-xs">
+      <div className="fixed bottom-0 left-[50px] flex-col h-[340px]">
         <div className="h-full flex flex-col justify-center items-center">
           <ul className="h-full flex flex-col justify-between mb-10">
             <li>
@@ -64,7 +64,7 @@ function Social() {
           <div className="h-2/5 border-r-[1px] border-[#a8b2d1]"></div>
         </div>
       </div>
-      <div className="fixed bottom-[128px] right-[-125px] rotate-90 tracking-[0.2em] w-[400px]">
+      <div className="fixed bottom-[128px] right-[-140px] rotate-90 tracking-[0.2em] w-[400px]">
         <div className="flex items-center">
           <a
             href="mailto:jackson.w.jung@gmail.com"
