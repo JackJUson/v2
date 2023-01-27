@@ -5,10 +5,10 @@ function About() {
   return (
     <div
       name="about"
-      className="w-full h-[50vh] min-h-[600px] bg-[#0a192f] flex justify-evenly items-center"
+      className="w-full h-full bg-[#0a192f] flex justify-evenly items-center"
     >
-      <div className="max-w-[1000px] flex justify-evenly text-[#8892b0]">
-        <p className="md:w-1/2 w-2/3">
+      <div className="lg:h-[50vh] max-w-[80%] w-[1000px] mx-auto flex justify-evenly text-[#8892b0] flex-col lg:flex-row items-center">
+        <p className="lg:w-1/2 m-11 lg:m-0">
           <span
             className="text-4xl text-gray-300 block font-bold border-b-4 
             border-[#64ffda] w-[169px] mb-5"
@@ -35,7 +35,7 @@ function About() {
           </span>
           <br />
         </p>
-        <div className="relative group hidden md:block group">
+        <div className="relative group hidden sm:block group mb-11 lg:mb-0">
           <img
             src={Profile}
             alt="Profile Image"
