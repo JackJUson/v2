@@ -26,7 +26,7 @@ function Navbar() {
       className={`fixed w-full h-[70px] flex justify-center items-center duration-300
       bg-[#0a192f] text-gray-300 px-8 z-50 bg-opacity-80 bg-clip-padding blur-backdrop-filter
       ${scrollDir === "down" ? "translate-y-[-100%]" : ""}
-      ${scrollY === 0 ? "mt-3" : "shadow-2xl"}`}
+      ${scrollY === 0 ? "py-11" : "shadow-2xl"}`}
     >
       <div className="flex w-full justify-between items-center">
         <Link to="home" smooth={true} duration={500}>
