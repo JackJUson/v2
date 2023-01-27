@@ -23,10 +23,10 @@ function Home() {
           <span className="text-[#64ffda] text-underline">NextJs</span>.
         </p>
         <div>
-          <Link to="about" smooth={true} duration={500}>
+          <Link to="about" smooth={true} duration={600}>
             <button
-              className="text-white group border-2 px-6 py-3 my-2 flex items-center rounded
-          hover:bg-[#64ffda] hover:bg-opacity-40 hover:border-[#64ffda] duration-300"
+              className="text-[#ccd6f6] border-[#ccd6f6] group border-2 px-6 py-3 my-2 flex items-center 
+              rounded hover:bg-[#64ffda] hover:text-white hover:bg-opacity-40 hover:border-[#64ffda] duration-300"
             >
               View Portfolio
             </button>

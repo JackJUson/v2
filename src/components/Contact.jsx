@@ -4,49 +4,30 @@ function Contact() {
   return (
     <div
       name="contact"
-      className="w-full h-screen bg-[#0a192f] flex justify-center items-center p-4"
+      className="w-full h-[50vh] min-h-[600px] bg-[#0a192f] flex flex-col justify-center items-center 
+      p-4 text-[#8892b0] text-center"
     >
-      <form
-        action="https://getform.io/f/de311da6-1e13-4759-baa8-95744e3eacf1"
-        method="POST"
-        className="flex flex-col max-w-[600px] w-full"
-      >
-        <div>
-          <p className="text-4xl font-bold inline border-b-4 border-[#64ffda] text-gray-300">
-            Contact
-          </p>
-          <p className="text-gray-300 py-4">
-            I'm currently open to new opportunities - email@email.com
-          </p>
-        </div>
-        <input
-          className="my-4 p-2 bg-[#ccd6f6]"
-          type="text"
-          placeholder="Name"
-          name="name"
-        />
-        <input
-          className="my-4 p-2 bg-[#ccd6f6]"
-          type="email"
-          placeholder="Email"
-          name="email"
-        />
-        <textarea
-          className="mt-4 p-2 bg-[#ccd6f6]"
-          name="message"
-          id=""
-          cols="30"
-          rows="10"
-          placeholder="Message"
-        ></textarea>
-
-        <button
-          className="text-white border-2 duration-300 hover:bg-[#64ffda] hover:bg-opacity-40
-           hover:border-[#64ffda] px-4 py-3 my-8 mx-auto flex items-center"
-        >
-          Let's Collaborate
-        </button>
-      </form>
+      <div className="h-full flex flex-col justify-center items-center">
+        <h3 className="text-[#64ffda] tracking-wider font-bold">
+          What's Next?
+        </h3>
+        <h1 className="text-6xl text-gray-300 block font-bold my-6">
+          Get In Touch
+        </h1>
+        <p className="max-w-[600px]">
+          I am currently looking for new opportunities so my inbox is always
+          open. Whether you have a question or just want to say hi, please send
+          me a message and I'll get back to you!
+        </p>
+        <a href="mailto:jackson.w.jung@gmail.com" target="_blank">
+          <button
+            className="border-[#ccd6f6] text-[#ccd6f6] group border-2 px-6 py-3 my-11 flex items-center rounded
+          hover:bg-[#64ffda] hover:bg-opacity-40 hover:border-[#64ffda] hover:text-white duration-300"
+          >
+            Say Hello
+          </button>
+        </a>
+      </div>
     </div>
   );
 }

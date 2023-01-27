@@ -28,7 +28,7 @@ function Navbar() {
       ${scrollDir === "down" ? "translate-y-[-100%]" : ""}
       ${scrollY === 0 ? "mt-3" : "shadow-2xl"}`}
     >
-      <div className="flex w-full justify-between items-center max-w-7xl">
+      <div className="flex w-full justify-between items-center">
         <Link to="home" smooth={true} duration={500}>
           <img
             src={Logo}
@@ -45,7 +45,7 @@ function Navbar() {
           <NavLink screen={true} link={"contact"} name={"Contact"} />
           <li>
             <a
-              className="border-2 border-gray-300 px-2 py-1 mx-3 flex items-center rounded
+              className="border-2 border-[#ccd6f6] text-[#ccd6f6] px-2 py-1 mx-3 flex items-center rounded
           hover:bg-[#64ffda] hover:bg-opacity-40 hover:text-white hover:border-[#64ffda] duration-300"
               href={Resume}
               target="_blank"
