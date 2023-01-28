@@ -7,7 +7,14 @@ function About() {
       name="about"
       className="w-full h-full bg-[#0a192f] flex justify-evenly items-center"
     >
-      <div className="lg:h-[50vh] min-h-[500px] max-w-[80%] w-[1000px] mx-auto flex justify-evenly text-[#8892b0] flex-col lg:flex-row items-center">
+      <div
+        className="lg:h-[50vh] min-h-[500px] max-w-[80%] w-[1000px] mx-auto flex 
+        justify-evenly text-[#8892b0] flex-col lg:flex-row items-center"
+        data-aos="fade-up"
+        data-aos-easing="ease-out"
+        data-aos-delay="400"
+        data-aos-duration="600"
+      >
         <p className="lg:w-1/2 m-11 mt-[4rem] lg:m-0">
           <span
             className="text-4xl text-gray-300 block font-bold border-b-4 
@@ -19,7 +26,8 @@ function About() {
           applications that could help others and myself.
           <br />
           <br />
-          My interest in <span className="text-[#64ffda] text-underline">
+          My interest in{" "}
+          <span className="text-[#64ffda] text-underline">
             web development
           </span>{" "}
           started with customising my own website that had a few productitivity
@@ -28,8 +36,8 @@ function About() {
           flexbox!
           <br />
           <br />
-          As of today, I am studying computer science at UNSW
-          and a graduate of the notorious{" "}
+          As of today, I am studying computer science at UNSW and a graduate of
+          the notorious{" "}
           <span className="text-[#64ffda] text-underline">
             frontend simplified internship!
           </span>
