@@ -7,14 +7,28 @@ function Work() {
     <div name="work" className="w-full text-[#ccd6f6] bg-[#0a192f]">
       <div className="max-w-[80%] w-[1000px] mx-auto p-11 flex flex-col justify-center">
         <div className="my-11">
-          <h1 className="text-4xl font-bold inline border-b-4 border-[#64ffda]">
+          <h1
+            className="text-4xl font-bold inline border-b-4 border-[#64ffda]"
+            data-aos="fade-up"
+            data-aos-easing="ease-out"
+            data-aos-delay="100"
+            data-aos-duration="500"
+          >
             Work
           </h1>
         </div>
 
         {projects.map((project, index) =>
           index % 2 === 0 ? (
-            <div className="flex max-h-[50%] mb-[4rem] background" key={index}>
+            <div
+              className="flex max-h-[50%] mb-[4rem] background"
+              data-aos="fade-up"
+              data-aos-easing="ease-out"
+              data-aos-delay="300"
+              data-aos-duration="500"
+              data-aos-once="true"
+              key={index}
+            >
               <div className="hidden md:flex items-center hover:scale-105 duration-300">
                 <a href={project.github} target="_blank">
                   <img
@@ -66,7 +80,15 @@ function Work() {
               </div>
             </div>
           ) : (
-            <div className="flex max-h-[50%] mb-[4rem] background" key={index}>
+            <div
+              className="flex max-h-[50%] mb-[4rem] background"
+              data-aos="fade-up"
+              data-aos-easing="ease-out"
+              data-aos-delay="300"
+              data-aos-duration="500"
+              data-aos-once="true"
+              key={index}
+            >
               <div className="text-left items-start flex flex-col justify-evenly min-h-[350px]">
                 <div>
                   <h3 className="text-[#64ffda] text-sm tracking-wide mb-2">

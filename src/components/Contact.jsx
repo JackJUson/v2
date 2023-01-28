@@ -6,7 +6,14 @@ function Contact() {
       name="contact"
       className="w-full h-[50vh] min-h-[600px] bg-[#0a192f] text-[#8892b0] text-center"
     >
-      <div className="h-full max-w-[80%] w-[1000px] mx-auto flex flex-col justify-center items-center">
+      <div
+        className="h-full max-w-[80%] w-[1000px] mx-auto flex flex-col justify-center items-center"
+        data-aos="fade-in"
+        data-aos-easing="ease-out"
+        data-aos-delay="400"
+        data-aos-duration="700"
+        data-aos-once="true"
+      >
         <h3 className="text-[#64ffda] tracking-wider font-bold">
           What's Next?
         </h3>

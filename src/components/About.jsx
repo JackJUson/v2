@@ -14,6 +14,7 @@ function About() {
         data-aos-easing="ease-out"
         data-aos-delay="400"
         data-aos-duration="600"
+        data-aos-once="true"
       >
         <p className="lg:w-1/2 m-11 mt-[4rem] lg:m-0">
           <span

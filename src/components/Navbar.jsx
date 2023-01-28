@@ -34,7 +34,7 @@ function Navbar() {
             src={Logo}
             alt="Logo Image"
             style={{ width: "60px" }}
-            className="cursor-pointer hover:brightness-50 duration-300"
+            className="cursor-pointer"
             data-aos="fade-in"
             data-aos-easing="ease-out"
             data-aos-delay="0"

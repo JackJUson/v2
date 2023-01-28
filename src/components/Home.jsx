@@ -12,6 +12,7 @@ function Home() {
           data-aos-easing="ease-out"
           data-aos-delay="1100"
           data-aos-duration="500"
+          data-aos-once="true"
         >
           Hi, my name is
         </p>
@@ -21,6 +22,7 @@ function Home() {
           data-aos-easing="ease-out"
           data-aos-delay="1300"
           data-aos-duration="500"
+          data-aos-once="true"
         >
           Jackson Jung.
         </h1>
@@ -30,6 +32,7 @@ function Home() {
           data-aos-easing="ease-out"
           data-aos-delay="1500"
           data-aos-duration="500"
+          data-aos-once="true"
         >
           I'm a Frontend Developer.
         </h2>
@@ -39,6 +42,7 @@ function Home() {
           data-aos-easing="ease-out"
           data-aos-delay="1600"
           data-aos-duration="400"
+          data-aos-once="true"
         >
           I have a strong passion for software engineering with experience
           building responsive multiplatform web applications. Currently, I'm
@@ -55,6 +59,7 @@ function Home() {
               data-aos-easing="ease-out"
               data-aos-delay="1700"
               data-aos-duration="400"
+              data-aos-once="true"
             >
               View Portfolio
             </button>

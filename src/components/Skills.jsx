@@ -21,6 +21,7 @@ function Skills() {
         data-aos-easing="ease-out"
         data-aos-delay="500"
         data-aos-duration="600"
+        data-aos-once="true"
       >
         <div>
           <p className="text-4xl font-bold inline border-b-4 border-[#64ffda]">
