@@ -35,15 +35,29 @@ function Navbar() {
             alt="Logo Image"
             style={{ width: "60px" }}
             className="cursor-pointer hover:brightness-50 duration-300"
+            data-aos="fade-in"
+            data-aos-easing="ease-out"
+            data-aos-delay="0"
+            data-aos-duration="800"
           />
         </Link>
         {/* Main menu */}
         <ul className="hidden md:flex items-center">
-          <NavLink screen={true} link={"home"} name={"Home"} />
-          <NavLink screen={true} link={"about"} name={"About"} />
-          <NavLink screen={true} link={"work"} name={"Work"} />
-          <NavLink screen={true} link={"contact"} name={"Contact"} />
-          <li>
+          <NavLink screen={true} link={"home"} name={"Home"} delay={"0"} />
+          <NavLink screen={true} link={"about"} name={"About"} delay={"100"} />
+          <NavLink screen={true} link={"work"} name={"Work"} delay={"200"} />
+          <NavLink
+            screen={true}
+            link={"contact"}
+            name={"Contact"}
+            delay={"300"}
+          />
+          <li
+            data-aos="fade-down"
+            data-aos-easing="ease-out"
+            data-aos-delay="400"
+            data-aos-duration="500"
+          >
             <a
               className="border-2 border-[#ccd6f6] text-[#ccd6f6] px-2 py-1 mx-3 flex items-center rounded
           hover:bg-[#64ffda] hover:bg-opacity-40 hover:text-white hover:border-[#64ffda] duration-300"
@@ -60,6 +74,10 @@ function Navbar() {
       <div
         onClick={handleClick}
         className="md:hidden z-10 cursor-pointer text-2xl"
+        data-aos="fade-in"
+        data-aos-easing="ease-out"
+        data-aos-delay="0"
+        data-aos-duration="500"
       >
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
